@@ -1,22 +1,22 @@
-COVID-19 Daily Case Prediction in Malaysia Using LSTM
+# COVID-19 Daily Case Prediction in Malaysia Using LSTM
 
-Overview 
+## Overview 
 
 This project aims to predict daily COVID-19 cases in Malaysia using a Long Short-Term Memory (LSTM) neural network. Due to the absence of AI-assisted systems during the initial outbreak of COVID-19, this deep learning model was proposed to assist in making data-driven decisions, such as imposing or lifting travel bans based on predicted cases. By training on past case data, this model forecasts new cases for the upcoming days, enabling better pandemic response planning.
 
-Project Goal 
+## Project Goal 
 
 To create an LSTM-based deep learning model to predict COVID-19 cases in Malaysia using the last 30 days of cases data. The model meets the following specifications:
 
 The architecture includes only LSTM, Dense, and Dropout layers. LSTM nodes are limited to 64, though the model depth is flexible. A window size of 30 days is used for predictions. Mean Absolute Percentage Error (MAPE) on the testing dataset is aimed to be less than 1%. Training progress is visualized using TensorBoard. Dataset The dataset includes daily COVID-19 cases reported in Malaysia, sourced from the Ministry of Health Malaysia’s official data repository (MoH Malaysia COVID-19 Public Data). The data used for training and testing can be found in the dataset folder of this repository.
 
-Model Architecture
+## Model Architecture
 
 The model architecture consists of:
 
 One or more LSTM layers, each with up to 64 nodes. Dropout layers to prevent overfitting. Dense layers to produce final output predictions.
 
-Requirements 
+## Requirements 
 
 The project requires the following Python libraries:
 
@@ -44,11 +44,13 @@ Training Loss: The model’s training loss declined steadily, as shown in the Te
 
 Credits Data Source: Ministry of Health Malaysia COVID-19 Public Data
 
-Model Architecture:
+## Model Architecture:
 
 <img width="662" alt="Model_architecture" src="https://github.com/user-attachments/assets/8a2e8be7-980f-412e-87ce-81f8f7af3380">
+
+
 <img width="281" alt="Model_architecture1" src="https://github.com/user-attachments/assets/21305dde-cb01-49f0-99ba-22c13d69c831">
 
-Results:
+## Results:
 
 <img width="591" alt="Prediction_graph" src="https://github.com/user-attachments/assets/6ed8ec5b-d6b7-422e-81e1-e05d177cefaf">
